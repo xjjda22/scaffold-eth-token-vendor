@@ -23,9 +23,17 @@ git clone https://github.com/austintgriffith/scaffold-eth.git challenge-2-token-
 cd challenge-2-token-vendor
 git checkout challenge-2-token-vendor
 yarn install
+
+OR 
+
+git clone https://github.com/harryranakl/scaffold-eth-token-vendor.git 
+cd scaffold-eth-token-vendor
+yarn install
 ```
 
 🔏 Edit your smart contract `YourToken.sol` in `packages/hardhat/contracts`
+
+🔏 reference .sample.env in `packages/react-app`
 
 ---
 
@@ -129,8 +137,7 @@ await vendor.transferOwnership("**YOUR FRONTEND ADDRESS**");
 
 🚔 Traffic to your url might break the [Infura](https://infura.io/) rate limit, edit your key: `constants.js` in `packages/ract-app/src`.
 
-> 🎖 Show off your app by pasting the url in the [Challenge 2 telegram channel](https://t.me/joinchat/IfARhZFc5bfPwpjq)
-
 ---
+### Dapp webiste: 
 
 > 💬 Problems, questions, comments on the stack? Post them to the [🏗 scaffold-eth developers chat](https://t.me/joinchat/F7nCRK3kI93PoCOk)
