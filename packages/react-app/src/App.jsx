@@ -60,11 +60,11 @@ const { Step } = Steps;
 */
 
 /// 📡 What chain are your contracts deployed to?
-const targetNetwork = NETWORKS["localhost"]; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+const targetNetwork = NETWORKS["kovan"]; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 
 // 😬 Sorry for all the console logging
 const DEBUG = true;
-const showBroswerRouter = true;
+const showBroswerRouter = false;
 
 // 🛰 providers
 if (DEBUG) console.log("📡 Connecting to Mainnet Ethereum");
@@ -392,14 +392,14 @@ function App(props) {
                 <div style={{ padding: 5, marginTop: 10, width: "100%", margin: "auto" }}>
                   <Card title=" 🛠️ Buy ↔️ Sell Tokens " style={{borderRadius: 12,}}>
                     <Steps current={2} progressDot={true}>
-                      <Step title="step 1" description="buy some tokens" />
+                      <Step title="step 1" description="buy some tokens : min 10" />
                       <Step title="step 2" description="approve tokens" />
-                      <Step title="step 3" description="sell back tokens" />
+                      <Step title="step 3" description="sell back tokens to get eth" />
                     </Steps>
                     <div style={{ padding: 2 }}>{tokensPerEth && tokensPerEth.toNumber()} tokens per ETH</div>
 
                     <div style={{ padding: 2 }}>
-                      <Balance balance={ethCostToPurchaseTokens} />
+                      ETH <Balance balance={ethCostToPurchaseTokens} /> = 
                       <Balance balance={ethCostToPurchaseTokens} dollarMultiplier={price} />
                     </div>
                     <Input
@@ -567,7 +567,7 @@ function App(props) {
             <Col span={6} style={{ textAlign: "center", opacity: 0.8 }}>
               <GasGauge gasPrice={gasPrice} />
             </Col>
-            {/*}
+            {/*
            <Col span={8} style={{ textAlign: "center", opacity: 1 }}>
              <Button
                onClick={() => {
@@ -581,7 +581,8 @@ function App(props) {
                </span>
                Support
              </Button>
-           </Col>*/}
+           </Col>
+            */}
             <Col span={12}>
               {
                 /*  if the local provider has a signer, let's show the faucet:  */

@@ -10,9 +10,11 @@ const main = async () => {
   console.log("\n\n 📡 Deploying...\n");
 
   const yourToken = await deploy("YourToken")
+  //kovan-0x5cf733C8a963AFB65af8CFC0b5F663e62bA84dA5
 
   //Todo: deploy the vendor
   const vendor = await deploy("Vendor",[ yourToken.address ])
+  //kovan-0x26FA107c815B67f9dC30A84025C7B26E93bA1340
 
   //console.log("\n 🏵  Sending all 1000 tokens to the vendor...\n");
   //Todo: transfer the tokens to the vendor

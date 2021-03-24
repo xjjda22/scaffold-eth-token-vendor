@@ -18,7 +18,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 //
 // Select the network you want to deploy to here:
 //
-const defaultNetwork = "localhost";
+const defaultNetwork = "kovan";
 
 function mnemonic() {
   try {
@@ -56,7 +56,7 @@ module.exports = {
     kovan: {
       url: "https://kovan.infura.io/v3/c387598aa08b48ebb6dc3296f6c198b7", //<---- YOUR INFURA ID! (or it won't work)
       accounts: {
-        mnemonic: mnemonic(),
+        mnemonic: mnemonic(''),
       },
     },
     mainnet: {

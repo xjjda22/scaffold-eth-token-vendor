@@ -3,7 +3,7 @@ pragma solidity >=0.6.0 <0.7.0;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 import "./YourToken.sol";
-import "hardhat/console.sol";
+// import "hardhat/console.sol";
 
 contract Vendor is Ownable {
 
@@ -39,7 +39,7 @@ contract Vendor is Ownable {
   	
   	// uint256 _eth = _t*10**18/(tokensPerEth*10**18);
   	uint256 _eth = (_t.mul(10**18)).div(tokensPerEth.mul(10**18));
-  	console.log("_tokens,_eth",_tokens,_eth);
+  	// console.log("_tokens,_eth",_tokens,_eth);
   	require(_eth <= address(this).balance, "check eth balance");
 
   	//0.1  eth    = 100000000000000000 

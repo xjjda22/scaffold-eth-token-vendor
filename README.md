@@ -138,6 +138,6 @@ await vendor.transferOwnership("**YOUR FRONTEND ADDRESS**");
 🚔 Traffic to your url might break the [Infura](https://infura.io/) rate limit, edit your key: `constants.js` in `packages/ract-app/src`.
 
 ---
-### Demo Dapp website: 
+### Demo Dapp website: 🎛 http://eth-erc20-fun.surge.sh/
 
 > 💬 Problems, questions, comments on the stack? Post them to the [🏗 scaffold-eth developers chat](https://t.me/joinchat/F7nCRK3kI93PoCOk)
