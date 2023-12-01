@@ -26,7 +26,7 @@ yarn install
 
 OR 
 
-git clone https://github.com/harryranakl/scaffold-eth-token-vendor.git 
+git clone https://github.com/xjjda22/scaffold-eth-token-vendor.git 
 cd scaffold-eth-token-vendor
 yarn install
 ```
