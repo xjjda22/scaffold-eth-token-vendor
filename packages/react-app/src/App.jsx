@@ -623,7 +623,7 @@ function App(props) {
                 <a
                   target="_blank"
                   style={{ padding: 10, color: "#000" }}
-                  href="https://github.com/harryranakl/scaffold-eth-token-vendor"
+                  href="https://github.com/xjjda22/scaffold-eth-token-vendor"
                 >
                   🍴 token-vendor-eth Fork me!
                 </a>
